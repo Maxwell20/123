@@ -54,7 +54,11 @@ namespace RealEstateWPF
             NOITextBox.Text = rentalItems.mNOI.ToString();
             TotalCashNeededTextBox.Text = rentalItems.mTotalCashNeeded.ToString();
             CAPRateTextBox.Text = rentalItems.mPurchaseCapRate.ToString();
-            ROITextBox.Text = rentalItems.mCashOnCashRoi.ToString();
+            try
+            {
+                ROITextBox.Text = rentalItems.mCashOnCashRoi.ToString().Split('.')[1] + "%";
+            }
+            catch { ROITextBox.Text = "0"; };
             MothlyPITextBox.Text = rentalItems.mMortgagePayment.ToString();
 
             List<string> chartTypes = new List<string> { "Cash Flow" , "Amoritization" };
@@ -134,18 +138,44 @@ namespace RealEstateWPF
         }
         public void ChartCashflow()
         {
+            ChartValues<double> CashFlowValues = new ChartValues<double>();
+            double income = mRentalItems.mMonthlyIncome;
+            double expenses = mRentalItems.mMonthlyExpenses;
+            double cashFlow = mRentalItems.mMonthlyCashflow;
+            CashFlowValues.Add(cashFlow);
+
             Chart1.AxisY.Add(new Axis
             {
-                Title = "$"
+                Title = "Cash Flow"
             });
             Chart1.AxisX.Add(new Axis
             {
-                Labels = new List<string> { "Income", "Expenses"}
+                Title = "Years"
             });
-            Chart1.Series.Add(new ColumnSeries
+
+            for (int i = 1; i < (mRentalItems.mMortgageYears * 12) + 1; i++)
             {
-                Values = new ChartValues<double> { mRentalItems.mMonthlyIncome , mRentalItems.mMonthlyExpenses + mRentalItems.mMortgagePayment }
+                if (IsDivisible(i, 12))
+                {
+                    income = income + (income * mRentalItems.mAnnualIncomeGrowth);
+                    expenses = expenses + (expenses * mRentalItems.mAnnualExpensesGrowth);
+                    cashFlow = (income - expenses) - mRentalItems.mMortgagePayment;
+                    CashFlowValues.Add(Math.Round(cashFlow, 2 ));
+                }
+            }
+
+            Chart1.Series.Add(new LineSeries
+            {
+                Values = CashFlowValues,
+                Stroke = Brushes.LightGreen,
+                Fill = new SolidColorBrush
+                {
+                    Color = System.Windows.Media.Color.FromRgb(50, 205, 50),
+                    Opacity = 0.7
+                },
+                Title = "Cash Flow"
             });
+
             DataContext = this;
         }
 
