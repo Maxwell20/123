@@ -31,13 +31,13 @@
         <Label Content="Term in Years" HorizontalAlignment="Left" Margin="352,244,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.6,-0.254"/>
         <TextBox x:Name="TermTextBox" HorizontalAlignment="Left" Height="23" Margin="352,275,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
         <Label Content="Down Payment" HorizontalAlignment="Left" Margin="60.246,244,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.6,-0.254" Grid.Column="1"/>
-        <TextBox x:Name="DownPaymentTextBox" HorizontalAlignment="Left" Height="23" Margin="65.246,275,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="DownPaymentTextBox" HorizontalAlignment="Left" Height="23" Margin="65.246,275,0,0" TextWrapping="Wrap" Text="20000" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
         <Label Content="Estimated Repairs" HorizontalAlignment="Left" Margin="352,186,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.6,-0.254" Grid.ColumnSpan="2"/>
         <TextBox x:Name="EstimatedRepairsTextBox" HorizontalAlignment="Left" Height="23" Margin="352,216,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
         <Label Content="Closing Cost" HorizontalAlignment="Left" Margin="73.246,186,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.6,-0.254" Grid.Column="1"/>
         <TextBox x:Name="ClosingCostTextBox" HorizontalAlignment="Left" Height="23" Margin="73.246,216,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
         <Label Content="Estimated After Repair Value" HorizontalAlignment="Left" Margin="358,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.6,-0.254" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="AfterRepairsTextBox" HorizontalAlignment="Left" Height="23" Margin="358,158,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="160" RenderTransformOrigin="-0.051,0.489" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="AfterRepairsTextBox" HorizontalAlignment="Left" Height="23" Margin="358,158,0,0" TextWrapping="Wrap" Text="120000" VerticalAlignment="Top" Width="160" RenderTransformOrigin="-0.051,0.489" Grid.ColumnSpan="2"/>
         <Label Content="Income" FontSize="14" FontWeight="UltraBold" HorizontalAlignment="Left" Margin="44,339,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.057,4.55" Width="188"/>
         <Label Content="Total Gross Monthley Rent" HorizontalAlignment="Left" Margin="45,373,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.869,0.471" Width="151"/>
         <TextBox x:Name="GrossMonthlyRentTextBox"  HorizontalAlignment="Left" Height="23" Margin="45,403,0,0" TextWrapping="Wrap" Text="1000" VerticalAlignment="Top" Width="151" RenderTransformOrigin="0.491,1.573"/>
@@ -57,30 +57,30 @@
         <Label Content="Monthly Insurance" HorizontalAlignment="Left" Margin="369,519,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
         <TextBox x:Name="MonthlyInsuranceTextBox" HorizontalAlignment="Left" Height="23" Margin="369,550,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
         <Label Content="Annual Property Tax" HorizontalAlignment="Left" Margin="62,578,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="PropertyTaxTextBox" HorizontalAlignment="Left" Height="23" Margin="62,609,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="PropertyTaxTextBox" HorizontalAlignment="Left" Height="23" Margin="62,609,0,0" TextWrapping="Wrap" Text="1000" VerticalAlignment="Top" Width="120"/>
         <Label Content="Other Monthly Expenses" HorizontalAlignment="Left" Margin="217,578,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="OtherExpensesTextBox" HorizontalAlignment="Left" Height="23" Margin="217,609,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
         <Label Content="Variable Landlord-Paid Expenses" FontSize="14" FontWeight="UltraBold" HorizontalAlignment="Left" Margin="44,637,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.057,4.55" Width="229"/>
         <Label Content="Vacancy %" HorizontalAlignment="Left" Margin="62,671,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="VacancyTextBox" HorizontalAlignment="Left" Height="23" Margin="62,697,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="120"/>
         <Label Content="Repairs and Maintenance %" HorizontalAlignment="Left" Margin="218,671,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.154,0.602"/>
-        <TextBox x:Name="RepairsMaintenanceTextBox"  HorizontalAlignment="Left" Height="23" Margin="217,697,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="RepairsMaintenanceTextBox"  HorizontalAlignment="Left" Height="23" Margin="217,697,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="120"/>
         <Label Content="Capital Expenditures %" HorizontalAlignment="Left" Margin="369,671,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.573,-0.672" Grid.ColumnSpan="2"/>
         <TextBox x:Name="CapitalExpendituresTextBox" HorizontalAlignment="Left" Height="23" Margin="369,697,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
         <Label Content="Management Fees %" HorizontalAlignment="Left" Margin="84.246,671,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.601,-0.223" Grid.Column="1"/>
         <TextBox x:Name="ManagementFeesTextBox" HorizontalAlignment="Left" Height="23" Margin="84.246,697,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
         <Label Content="Future Assumptions" FontSize="14" FontWeight="UltraBold" HorizontalAlignment="Left" Margin="45,740,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.057,4.55" Width="229"/>
         <Label Content="Annual Income Growth %" HorizontalAlignment="Left" Margin="62,773,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="AnnualIncomeGrowthTextBox" HorizontalAlignment="Left" Height="23" Margin="62,799,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="AnnualIncomeGrowthTextBox" HorizontalAlignment="Left" Height="23" Margin="62,799,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="120"/>
         <Label Content="Annual PV Growth %" HorizontalAlignment="Left" Margin="218,773,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.154,0.602"/>
-        <TextBox x:Name="AnnualPVGrowthTextBox" HorizontalAlignment="Left" Height="23" Margin="218,799,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="AnnualPVGrowthTextBox" HorizontalAlignment="Left" Height="23" Margin="218,799,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="120"/>
         <Label Content="Annual Expenses Growth %" HorizontalAlignment="Left" Margin="369,773,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.573,-0.672" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="AnnualExpensesGrowthTextBox"  HorizontalAlignment="Left" Height="23" Margin="369,799,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="AnnualExpensesGrowthTextBox"  HorizontalAlignment="Left" Height="23" Margin="369,799,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
         <Label Content="Sales Expenses %" HorizontalAlignment="Left" Margin="84.246,773,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.601,-0.223" Grid.Column="1"/>
-        <TextBox x:Name="SalesExpensesTextBox" HorizontalAlignment="Left" Height="23" Margin="84.246,799,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="SalesExpensesTextBox" HorizontalAlignment="Left" Height="23" Margin="84.246,799,0,0" TextWrapping="Wrap" Text="6" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
         <Button x:Name="CalculateButton" Background="LightSkyBlue" FontWeight="Bold" Content="Calculate" HorizontalAlignment="Left" Margin="84.246,865,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="3.186,1.386" Height="47" Click="CalculateButton_Click" Grid.Column="1"/>
         <Label Content="Estimated Years To Own" HorizontalAlignment="Left" Margin="353,77,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.6,-0.254" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="YearsToOwnTextBox" HorizontalAlignment="Left" Height="23" Margin="358,103,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="160" RenderTransformOrigin="-0.051,0.489" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="YearsToOwnTextBox" HorizontalAlignment="Left" Height="23" Margin="358,103,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="160" RenderTransformOrigin="-0.051,0.489" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>
