@@ -143,7 +143,7 @@ namespace RealEstateWPF
             double expenses = mRentalItems.mMonthlyExpenses;
             double cashFlow = mRentalItems.mMonthlyCashflow;
             CashFlowValues.Add(cashFlow);
-
+            cashFlow = 0;
             Chart1.AxisY.Add(new Axis
             {
                 Title = "Cash Flow"
@@ -159,7 +159,7 @@ namespace RealEstateWPF
                 {
                     income = income + (income * mRentalItems.mAnnualIncomeGrowth);
                     expenses = expenses + (expenses * mRentalItems.mAnnualExpensesGrowth);
-                    cashFlow = (income - expenses) - mRentalItems.mMortgagePayment;
+                    cashFlow = (income - expenses) - mRentalItems.mMortgagePayment - mRentalItems.mMonthlyVariableExpenses ;
                     CashFlowValues.Add(Math.Round(cashFlow, 2 ));
                 }
             }
