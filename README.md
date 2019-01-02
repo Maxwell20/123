@@ -1,7 +1,7 @@
 Screenshots
 
 
-![ScreenShot](https://github.com/Maxwell20/LiftTrack-Android-Application/blob/master/Calc.PNG)
+![ScreenShot](https://github.com/Maxwell20/RealEstateInvestmentCalc/blob/master/Calc.PNG)
 
 
 Installation
