@@ -3,16 +3,13 @@ Screenshots
 
 ![ScreenShot](https://github.com/Maxwell20/RealEstateInvestmentCalc/blob/master/Calc.PNG)
 
-
-Installation
-
-You will need to have visual studio 2015 and Xamarin for visual studio fork then run the .sln.
-
 Usage
 
 For Real Estate Investors.
 
 Contributing
+
+Planning to add more charts and create a cleaner User Interface!
 
 Fork it!
 Create your feature branch: git checkout -b my-new-feature
