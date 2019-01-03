@@ -94,14 +94,7 @@ namespace RealEstateWPF
             CalcMortgagePayment();
             CalcCashflow();
             CalcROI();
-
-
-            //live chart
-
-
-
-
-
+            CalcCapRate();
         }
         //M = P[i(1 + i)^n] / [(1 + i)^n – 1]
         //M = monthly mortgage payment
@@ -130,7 +123,8 @@ namespace RealEstateWPF
         }
         void CalcCapRate()
         {
-            mPurchaseCapRate = (mMonthlyCashflow * 12) / (mNOI);
+            mPurchaseCapRate = Math.Round(mNOI / mPurchasePrice , 2);
+            mProFormaCap = Math.Round(mNOI / mAfterRepairValue, 2);
         }
 
 

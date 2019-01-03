@@ -35,7 +35,7 @@
         <Label Content="Estimated Repairs" HorizontalAlignment="Left" Margin="352,186,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.6,-0.254" Grid.ColumnSpan="2"/>
         <TextBox x:Name="EstimatedRepairsTextBox" HorizontalAlignment="Left" Height="23" Margin="352,216,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
         <Label Content="Closing Cost" HorizontalAlignment="Left" Margin="73.246,186,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.6,-0.254" Grid.Column="1"/>
-        <TextBox x:Name="ClosingCostTextBox" HorizontalAlignment="Left" Height="23" Margin="73.246,216,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="ClosingCostTextBox" HorizontalAlignment="Left" Height="23" Margin="60,217,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
         <Label Content="Estimated After Repair Value" HorizontalAlignment="Left" Margin="358,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.6,-0.254" Grid.ColumnSpan="2"/>
         <TextBox x:Name="AfterRepairsTextBox" HorizontalAlignment="Left" Height="23" Margin="358,158,0,0" TextWrapping="Wrap" Text="120000" VerticalAlignment="Top" Width="160" RenderTransformOrigin="-0.051,0.489" Grid.ColumnSpan="2"/>
         <Label Content="Income" FontSize="14" FontWeight="UltraBold" HorizontalAlignment="Left" Margin="44,339,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.057,4.55" Width="188"/>

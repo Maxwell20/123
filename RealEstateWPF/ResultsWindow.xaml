@@ -33,11 +33,11 @@
         <Label Content="Monthly Principal and Interest" HorizontalAlignment="Left" Margin="20,139.667,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.337,6.391" Grid.Row="1"/>
         <TextBlock x:Name="MothlyPITextBox" HorizontalAlignment="Left" Margin="28,170.667,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" RenderTransformOrigin="-5.108,-1.466" Grid.Row="1"/>
         <Label Content="CAP Rate" HorizontalAlignment="Left" Margin="466,61,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.488,0.842"/>
-        <TextBlock x:Name="CAPRateTextBox" HorizontalAlignment="Left" Margin="475,92,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="9"/>
-        <Label Content="Cash On Cash Return" HorizontalAlignment="Left" Margin="568,61,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.488,0.842" Width="109"/>
+        <TextBlock x:Name="CAPRateTextBox" HorizontalAlignment="Left" Margin="475,92,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="50"/>
+        <Label Content="Cash On Cash Return" HorizontalAlignment="Left" Margin="568,61,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.488,0.842" Width="131"/>
         <TextBlock x:Name="ROITextBox" HorizontalAlignment="Left" Margin="573,92,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" RenderTransformOrigin="0.524,1.107"/>
         <Label Content="PRO Forma Cap" HorizontalAlignment="Left" Margin="568,9,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.148,0.542"/>
-        <TextBlock x:Name="ProFormaCapTextBox" HorizontalAlignment="Left" Margin="573,41,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" RenderTransformOrigin="1.644,0.652"/>
+        <TextBlock x:Name="ProFormaCapTextBox" HorizontalAlignment="Left" Margin="573,41,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" RenderTransformOrigin="1.644,0.652" Width="68"/>
         <Label Content="Net Operating Income" HorizontalAlignment="Left" Margin="207,61,0,0" VerticalAlignment="Top"/>
         <TextBlock x:Name="NOITextBox" HorizontalAlignment="Left" Margin="215,92,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
         <Label Content="Monthly Expenses" HorizontalAlignment="Left" Margin="336,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.313,0.842"/>

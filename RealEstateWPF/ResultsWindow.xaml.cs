@@ -59,6 +59,17 @@ namespace RealEstateWPF
                 ROITextBox.Text = rentalItems.mCashOnCashRoi.ToString().Split('.')[1] + "%";
             }
             catch { ROITextBox.Text = "0"; };
+            try
+            {
+                CAPRateTextBox.Text = rentalItems.mPurchaseCapRate.ToString().Split('.')[1] + "%";
+            }
+            catch { CAPRateTextBox.Text = "0"; };
+            try
+            {
+                ProFormaCapTextBox.Text = rentalItems.mProFormaCap.ToString().Split('.')[1] + "%";
+            }
+            catch { CAPRateTextBox.Text = "0"; };
+
             MothlyPITextBox.Text = rentalItems.mMortgagePayment.ToString();
 
             List<string> chartTypes = new List<string> { "Cash Flow" , "Amoritization" };
